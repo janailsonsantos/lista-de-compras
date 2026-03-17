@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="assets/icons/logo.svg" alt="">
+    
+    <div class="main">
+        <a href="#"><img src="assets/icons/link button.svg" alt=""></a>
+        <h1>Compras da semana</h1>
+
+        <form class="input">
+            <input type="text"  id="name-buy" placeholder="Adicione um novo item">
+            <button>Adicionar item</button>
+        </form>
+
+        <div class="buys">
+        <div class="list">
+            <span>
+                <input type="radio" name="list-buy" id="list-buy"> 
+                <p>Pão de forma</p>
+            </span>
+            <a class="remove" href="#"><img src="assets/icons/icon delete.svg" alt=""></a>
+        </div>
+        <div class="list">
+            <span>
+                <input type="radio" name="list-buy" id="list-buy"> 
+                <p>Café preto</p>
+            </span>
+            <a class="remove" href="#"><img src="assets/icons/icon delete.svg" alt=""></a>
+        </div>
+        </div>
+    </div>
+    <div class="removed hide">
+        <span>
+            <img src="assets/icons/warning-circle-filled.svg" alt=""> 
+            <p>O item foi removido da lista</p>
+        </span>
+        <a class="out-alert" href="#">X</a>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
